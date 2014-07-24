@@ -56,6 +56,20 @@ void postorder(tnode *t)	// LRD
 	}
 }
 
+int countleaf(tnode *t)
+{
+	if (t)
+	{
+		int m = countleaf(t->lchild);
+		int n = countleaf(t->rchild);
+		if (m + n == 0)
+			return 1;
+		else
+			return 0;
+	}
+	return 0;
+}
+
 void main(void)
 {
 	tnode *t;
@@ -68,6 +82,9 @@ void main(void)
 	cout << endl;
 	cout << "Postorder: ";
 	postorder(t);
+	cout << endl;
+	cout << "Count Leaf: ";
+	cout << countleaf(t);
 	cout << endl;
 	system("pause");
 }
