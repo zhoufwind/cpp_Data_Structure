@@ -70,6 +70,20 @@ int countleaf(tnode *t)
 	return 0;
 }
 
+int height(tnode *t)	// Calc tree's height
+{
+	if (t)
+	{
+		int m = 1 + height(t->lchild);	// if left side have child, +1
+		int n = 1 + height(t->rchild);	// if right side have child, +1
+		if (m >= n)
+			return m;	// if left greater than right, return left
+		else
+			return n;
+	}
+	return 0;	// if t = null, return 0, it's the begining
+}
+
 void main(void)
 {
 	tnode *t;
@@ -85,6 +99,9 @@ void main(void)
 	cout << endl;
 	cout << "Count Leaf: ";
 	cout << countleaf(t);
+	cout << endl;
+	cout << "Tree height: ";
+	cout << height(t);
 	cout << endl;
 	system("pause");
 }
