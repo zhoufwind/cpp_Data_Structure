@@ -11,9 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B37D92C8-397B-42EA-A437-C601926A8390}</ProjectGuid>
-    <RootNamespace>cpp_Data_Structure</RootNamespace>
-    <ProjectName>Tree_B_R</ProjectName>
+    <ProjectGuid>{3499F0E4-5A2D-4314-8AB3-B8AB3A02CB88}</ProjectGuid>
+    <RootNamespace>Tree_B_UR</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,7 +68,7 @@
     <ClInclude Include="stdlib.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tree_B_R.cpp" />
+    <ClCompile Include="Tree_B_UR.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
