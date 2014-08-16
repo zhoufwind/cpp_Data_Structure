@@ -76,5 +76,7 @@ void main(void)
 	sqlist l;
 	initlistn(l, 10);
 	print(l);
+	insertlist(l, 4, 200);
+	print(l);
 	system("pause");
 }
