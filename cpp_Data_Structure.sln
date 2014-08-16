@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tree_B_R", "cpp_Data_Struct
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tree_B_UR", "Tree_B_UR\Tree_B_UR.vcxproj", "{3499F0E4-5A2D-4314-8AB3-B8AB3A02CB88}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearList_SequenceList", "LinearList_SequenceList\LinearList_SequenceList.vcxproj", "{239DE7D8-D576-4BE7-99BC-A42730794496}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{3499F0E4-5A2D-4314-8AB3-B8AB3A02CB88}.Debug|Win32.Build.0 = Debug|Win32
 		{3499F0E4-5A2D-4314-8AB3-B8AB3A02CB88}.Release|Win32.ActiveCfg = Release|Win32
 		{3499F0E4-5A2D-4314-8AB3-B8AB3A02CB88}.Release|Win32.Build.0 = Release|Win32
+		{239DE7D8-D576-4BE7-99BC-A42730794496}.Debug|Win32.ActiveCfg = Debug|Win32
+		{239DE7D8-D576-4BE7-99BC-A42730794496}.Debug|Win32.Build.0 = Debug|Win32
+		{239DE7D8-D576-4BE7-99BC-A42730794496}.Release|Win32.ActiveCfg = Release|Win32
+		{239DE7D8-D576-4BE7-99BC-A42730794496}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
