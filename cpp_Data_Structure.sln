@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tree_B_UR", "Tree_B_UR\Tree
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearList_SequenceList", "LinearList_SequenceList\LinearList_SequenceList.vcxproj", "{239DE7D8-D576-4BE7-99BC-A42730794496}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearList_SinglyLinkedList", "LinearList_SinglyLinkedList\LinearList_SinglyLinkedList.vcxproj", "{8D7E3D76-C26B-40CF-9A7B-635D2DD9A198}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -27,6 +29,10 @@ Global
 		{239DE7D8-D576-4BE7-99BC-A42730794496}.Debug|Win32.Build.0 = Debug|Win32
 		{239DE7D8-D576-4BE7-99BC-A42730794496}.Release|Win32.ActiveCfg = Release|Win32
 		{239DE7D8-D576-4BE7-99BC-A42730794496}.Release|Win32.Build.0 = Release|Win32
+		{8D7E3D76-C26B-40CF-9A7B-635D2DD9A198}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8D7E3D76-C26B-40CF-9A7B-635D2DD9A198}.Debug|Win32.Build.0 = Debug|Win32
+		{8D7E3D76-C26B-40CF-9A7B-635D2DD9A198}.Release|Win32.ActiveCfg = Release|Win32
+		{8D7E3D76-C26B-40CF-9A7B-635D2DD9A198}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
