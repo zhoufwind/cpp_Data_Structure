@@ -71,12 +71,48 @@ int insertlist(sqlist &l, int i, int e)
 	return 1;
 }
 
+/* 删除节点 */
+int deletelist(sqlist &l, int i, int &e)
+{
+	if (i < 1 || i > l.length)	// 删除位置不合理
+	{
+		return 0;
+	}
+	int *p = &l.elem[l.length - 1];
+	int *q = &l.elem[i - 1];
+	e = *q;		// 先保存
+	for (; q < p; q++)
+	{
+		*q = *(q + 1);	// 移动数据元素
+	}
+	l.length--;
+	return 1;
+}
+
+void turn(sqlist &l)
+{
+	int *p = &l.elem[0];
+	int *q = &l.elem[l.length - 1];
+	int *temp = new int;
+	for (; p < q; p++, q--)
+	{
+		*temp = *p;
+		*p = *q;
+		*q = *temp;
+	}
+}
+
 void main(void)
 {
 	sqlist l;
 	initlistn(l, 10);
 	print(l);
 	insertlist(l, 4, 200);
+	print(l);
+	int e;
+	deletelist(l, 4, e);
+	print(l);
+	turn(l);
 	print(l);
 	system("pause");
 }
