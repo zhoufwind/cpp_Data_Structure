@@ -39,10 +39,55 @@ void print(Lnode *l)
 	cout << endl;
 }
 
+int insertlist(Lnode *&l, int i, int e)
+{
+	Lnode *p = l;
+	int j = 0;
+	while (p && j < i - 1)	// locate insert position
+	{
+		p = p->next;
+		j++;
+	}
+	if (!p->next || j > i - 1)	// node isn't exist
+	{
+		return 0;
+	}
+	Lnode *s = new Lnode;
+	s->data = e;
+	s->next = p->next;
+	p->next = s;
+	return 1;
+}
+
+int deletelist(Lnode *&l, int i, int &e)
+{
+	Lnode *p = l;
+	int j = 0;
+	while (p->next && j < i - 1)	// locate delete position
+	{
+		p = p->next;
+		j++;
+	}
+	if (!p->next || j > i - 1)	// node isn't exist
+	{
+		return 0;
+	}
+	Lnode *q = p->next;
+	e = q->data;
+	p->next = q->next;
+	delete q;
+	return 1;
+}
+
 void main()
 {
 	Lnode *l;
 	createn(l, 5);
+	print(l);
+	insertlist(l, 4, 200);
+	print(l);
+	int e;
+	deletelist(l, 4, e);
 	print(l);
 	system("pause");
 }
