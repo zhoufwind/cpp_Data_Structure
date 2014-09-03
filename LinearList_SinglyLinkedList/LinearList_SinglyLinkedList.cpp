@@ -79,6 +79,35 @@ int deletelist(Lnode *&l, int i, int &e)
 	return 1;
 }
 
+int searchX(Lnode *l, int x)
+{
+	Lnode *p = l->next;
+	while (p)
+	{
+		if (p->data == x)
+		{
+			return 1;
+		}
+		p = p->next;
+	}
+	return 0;
+}
+
+int count(Lnode *l)
+{
+	Lnode *p = l->next;
+	int s = 0;
+	while (p)
+	{
+		if (p->data % 2 == 0)
+		{
+			s++;
+		}
+		p = p->next;
+	}
+	return s;
+}
+
 void main()
 {
 	Lnode *l;
@@ -89,5 +118,7 @@ void main()
 	int e;
 	deletelist(l, 4, e);
 	print(l);
+	cout << searchX(l, 5) << endl;
+	cout << count(l) << endl;
 	system("pause");
 }
