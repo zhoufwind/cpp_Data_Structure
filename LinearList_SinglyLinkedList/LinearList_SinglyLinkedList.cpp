@@ -3,23 +3,26 @@
 
 using namespace std;
 
+/* Lnode data struct */
 typedef struct Lnode
 {
-	int data;
-	Lnode *next;
+	int data;		// store node info
+	Lnode *next;	// sotre next node location
 }Lnode;
 
+/* Create new empty Lnode */
 void create(Lnode *&l)
 {
 	l = new Lnode;
 	l->next = NULL;
 }
 
+/* Create Lnode by imput info */
 void createn(Lnode *&l, int n)
 {
 	create(l);
 	Lnode *s;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)	// FIFO, first input will store at List's tail
 	{
 		s = new Lnode;
 		cin >> s->data;
@@ -28,6 +31,7 @@ void createn(Lnode *&l, int n)
 	}
 }
 
+/* Print the link */
 void print(Lnode *l)
 {
 	Lnode *p = l->next;
@@ -39,11 +43,12 @@ void print(Lnode *l)
 	cout << endl;
 }
 
+/* Insert node into the link */
 int insertlist(Lnode *&l, int i, int e)
 {
 	Lnode *p = l;
 	int j = 0;
-	while (p && j < i - 1)	// locate insert position
+	while (p && j < i - 1)	// locate insert position, store into p
 	{
 		p = p->next;
 		j++;
@@ -59,11 +64,12 @@ int insertlist(Lnode *&l, int i, int e)
 	return 1;
 }
 
+/* delete node from the link */
 int deletelist(Lnode *&l, int i, int &e)
 {
 	Lnode *p = l;
 	int j = 0;
-	while (p->next && j < i - 1)	// locate delete position
+	while (p->next && j < i - 1)	// locate delete position, store into p
 	{
 		p = p->next;
 		j++;
@@ -79,6 +85,7 @@ int deletelist(Lnode *&l, int i, int &e)
 	return 1;
 }
 
+/* searching for keyword: "x", if exist, returning 1, otherwise 0 */
 int searchX(Lnode *l, int x)
 {
 	Lnode *p = l->next;
@@ -93,10 +100,11 @@ int searchX(Lnode *l, int x)
 	return 0;
 }
 
+/* calc even counts */
 int count(Lnode *l)
 {
 	Lnode *p = l->next;
-	int s = 0;
+	int s = 0;	// setting counter
 	while (p)
 	{
 		if (p->data % 2 == 0)
