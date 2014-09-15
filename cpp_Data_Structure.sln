@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30110.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tree_B_R", "cpp_Data_Structure\cpp_Data_Structure.vcxproj", "{B37D92C8-397B-42EA-A437-C601926A8390}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearList_SinglyLinkedList", "LinearList_SinglyLinkedList\LinearList_SinglyLinkedList.vcxproj", "{8D7E3D76-C26B-40CF-9A7B-635D2DD9A198}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Graph_AdjacencyMatrix", "Graph_AdjacencyMatrix\Graph_AdjacencyMatrix.vcxproj", "{B4A33619-71F3-4834-A145-DDA9A77D740D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort_Selection", "Sort_Selection\Sort_Selection.vcxproj", "{BADDD331-0B48-458C-8460-516FB35211C8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sort_Bubble", "Sort_Bubble\Sort_Bubble.vcxproj", "{8F720432-D663-4346-B83A-37C1F6613DFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{B4A33619-71F3-4834-A145-DDA9A77D740D}.Debug|Win32.Build.0 = Debug|Win32
 		{B4A33619-71F3-4834-A145-DDA9A77D740D}.Release|Win32.ActiveCfg = Release|Win32
 		{B4A33619-71F3-4834-A145-DDA9A77D740D}.Release|Win32.Build.0 = Release|Win32
+		{BADDD331-0B48-458C-8460-516FB35211C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BADDD331-0B48-458C-8460-516FB35211C8}.Debug|Win32.Build.0 = Debug|Win32
+		{BADDD331-0B48-458C-8460-516FB35211C8}.Release|Win32.ActiveCfg = Release|Win32
+		{BADDD331-0B48-458C-8460-516FB35211C8}.Release|Win32.Build.0 = Release|Win32
+		{8F720432-D663-4346-B83A-37C1F6613DFB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8F720432-D663-4346-B83A-37C1F6613DFB}.Debug|Win32.Build.0 = Debug|Win32
+		{8F720432-D663-4346-B83A-37C1F6613DFB}.Release|Win32.ActiveCfg = Release|Win32
+		{8F720432-D663-4346-B83A-37C1F6613DFB}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
